@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Data
 @Entity
 @Table(name = "users")
-@Where(clause = "is_deleted=false")
+@Where(clause = "deleted=false")
 public class User extends BaseEntity {
 
 
@@ -27,6 +27,7 @@ public class User extends BaseEntity {
     private Role role;
     @Enumerated(EnumType.STRING)
     private Gender gender;
+    private boolean deleted=false;
 
 
 

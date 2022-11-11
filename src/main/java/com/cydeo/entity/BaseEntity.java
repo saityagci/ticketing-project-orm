@@ -24,4 +24,5 @@ public class BaseEntity {
     private Long lastUpdateUserId;
 
 
+
 }

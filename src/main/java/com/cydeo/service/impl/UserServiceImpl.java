@@ -71,7 +71,8 @@ public class UserServiceImpl implements UserService {
         //i ll not delete from database
         //change the flag and keep it in the db
         User user=userRepository.findByUserName(userName);
-        user.setDeleted(true);
+        //user.setDeleted(true);
+        user.setIsDeleted(true);
         userRepository.save(user);
 
     }
